@@ -1,0 +1,35 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+ 
+ /* You can override the default Infima variables here. */
+ @import url('https://rsms.me/inter/inter.css');
+ 
+:root {
+  --ifm-color-primary: #0074D9;
+  --ifm-color-primary-dark: #0059BA;
+  --ifm-color-primary-darker: #00429C;
+  --ifm-color-primary-darkest: #002F7D;
+  --ifm-color-primary-light: #3AA0E8;
+  --ifm-color-primary-lighter: #96DCFB;
+  --ifm-color-primary-lightest: #96DCFB;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgb(72, 77, 91);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+.button.button--secondary.button--outline:not(.button--active):not(:hover) {
+  color: var(--ifm-color-secondary);
+}
+
+.button.button--outline:hover, .button.button--outline:active, .button.button--outline.button--active {
+  color: var(--ifm-color-primary)
+}
