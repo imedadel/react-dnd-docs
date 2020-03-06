@@ -7,7 +7,7 @@ _New to React DnD? [Read the overview](/docs/overview) before jumping into the d
 
 # Touch Backend
 
-The HTML5 backend does not support the touch events. So it will not work on tablet and mobile devices. You can use the `react-dnd-touch-backend` for touch devices.
+The HTML5 backend does not support the touch events. It does not work on tablet and mobile devices. You can use instead the `react-dnd-touch-backend` for touch devices.
 
 ### Installation
 

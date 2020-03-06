@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "alex": true,
+    "write-good": true,
+  }
+}

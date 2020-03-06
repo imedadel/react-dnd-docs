@@ -3,8 +3,6 @@ id: drag-source-connector
 title: DragSourceConnector
 ---
 
-<!--alex disable special -->
-
 _New to React DnD? [Read the overview](/docs/overview) before jumping into the docs._
 
 # DragSourceConnector
