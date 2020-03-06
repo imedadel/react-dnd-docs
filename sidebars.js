@@ -7,8 +7,33 @@
 
 module.exports = {
 	someSidebar: {
-		"Getting Started": ["overview", "getting-started"],
-		Docusaurus: ["doc1", "doc2", "doc3"],
-		Features: ["mdx"],
+		"Quick Start": [
+			"overview",
+			"tutorial",
+			"testing",
+			"faq",
+			"troubleshooting",
+			"getting-started",
+		],
+		"Top-Level API": [
+			"use-drag",
+			"use-drop",
+			"use-drag-layer",
+			"dnd-provider",
+			"drag-preview-image",
+		],
+		"Monitoring State": [
+			"drag-source-monitor",
+			"drop-target-monitor",
+			"drag-layer-monitor",
+		],
+		"Legacy Decorator API": [
+			"drag-source",
+			"drop-target",
+			"drag-layer",
+			"drag-source-connector",
+			"drop-target-connector",
+		],
+		Backends: ["html5", "touch", "test"],
 	},
 }

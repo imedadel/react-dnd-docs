@@ -14,11 +14,16 @@ module.exports = {
 				src: "img/DnD.svg",
 			},
 			links: [
-				{ to: "docs/doc1", label: "Docs", position: "right" },
-				{ to: "blog", label: "Blog", position: "right" },
+				{ to: "docs/Overview", label: "Docs", position: "right" },
+				{ to: "https://twitter.com/imedadel_", label: "Twitter", position: "right" },
 				{
-					href: "https://github.com/facebook/docusaurus",
-					label: "GitHub",
+					href: "https://github.com/react-dnd/react-dnd",
+					label: "React DnD on GitHub",
+					position: "right",
+				},
+				{
+					href: "https://github.com/ImedAdel/react-dnd-docs",
+					label: "Docs on GitHub",
 					position: "right",
 				},
 			],
@@ -30,12 +35,24 @@ module.exports = {
 					title: "Docs",
 					items: [
 						{
-							label: "Style Guide",
-							to: "docs/doc1",
+							label: "Quick Start",
+							to: "docs/Overview",
 						},
 						{
-							label: "Second Doc",
-							to: "docs/doc2",
+							label: "Top-Level API",
+							to: "docs/use-drag",
+						},
+						{
+							label: "Monitoring State",
+							to: "docs/drag-source-monitor",
+						},
+						{
+							label: "Legacy Decorator API",
+							to: "docs/drag-source",
+						},
+						{
+							label: "Backends",
+							to: "docs/html5",
 						},
 					],
 				},
@@ -44,11 +61,11 @@ module.exports = {
 					items: [
 						{
 							label: "Stack Overflow",
-							href: "https://stackoverflow.com/questions/tagged/docusaurus",
+							href: "https://stackoverflow.com/questions/tagged/react-dnd",
 						},
 						{
 							label: "Discord",
-							href: "https://discordapp.com/invite/docusaurus",
+							href: "https://www.reactiflux.com/",
 						},
 					],
 				},
@@ -56,21 +73,29 @@ module.exports = {
 					title: "Social",
 					items: [
 						{
-							label: "Blog",
-							to: "blog",
+							label: "Old Site",
+							to: "https://react-dnd.github.io/react-dnd/",
 						},
 						{
-							label: "GitHub",
-							href: "https://github.com/facebook/docusaurus",
+							label: "Imed Adel",
+							to: "https://imedadel.me",
+						},
+						{
+							label: "Docs on GitHub",
+							href: "https://github.com/ImedAdel/react-dnd-docs",
+						},
+						{
+							label: "React DnD on GitHub",
+							href: "https://github.com/react-dnd/react-dnd",
 						},
 						{
 							label: "Twitter",
-							href: "https://twitter.com/docusaurus",
+							href: "https://twitter.com/imedadel_",
 						},
 					],
 				},
 			],
-			copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+			copyright: `Built by Imed Adel using with Docusaurus.`,
 		},
 	},
 	presets: [
@@ -80,7 +105,7 @@ module.exports = {
 				docs: {
 					sidebarPath: require.resolve("./sidebars.js"),
 					editUrl:
-						"https://github.com/facebook/docusaurus/edit/master/website/",
+						"https://github.com/ImedAdel/react-dnd-docs/edit/master/",
 				},
 				theme: {
 					customCss: require.resolve("./src/css/custom.css"),
@@ -88,4 +113,5 @@ module.exports = {
 			},
 		],
 	],
+	themes: ["@docusaurus/theme-live-codeblock"],
 }
